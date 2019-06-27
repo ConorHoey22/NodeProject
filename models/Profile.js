@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const UserSchema = new mongoose.Schema({
+const ProfileSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user'
@@ -10,6 +10,11 @@ const UserSchema = new mongoose.Schema({
     required: true
   },
   location: {
+    type: String,
+    required: true
+  },
+  userType: {
+    //This is the userType , e.g. Admin
     type: String,
     required: true
   }

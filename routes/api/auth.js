@@ -8,6 +8,7 @@ const { check, validationResult } = require('express-validator/check');
 
 const auth = require('../../middleware/auth'); //used for Protected Routes
 const User = require('../../models/User'); // User Model
+
 //@route    GET api/auth
 //@desc     Test route
 //@access   Public - no token needed
